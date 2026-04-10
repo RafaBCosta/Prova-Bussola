@@ -1,11 +1,10 @@
 package com.api.viagem.service;
 
-import com.api.viagem.model.ViagemEntity;
+import com.api.viagem.model.Viagem;
 import com.api.viagem.repository.ViagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -15,17 +14,11 @@ public class ViagemService {
     @Autowired
     ViagemRepository viagemRepository;
 
-    public List<ViagemEntity> findAll(){
+    public List<Viagem> findAll(){
         return viagemRepository.findAll();
     }
 
-    public {
+    public ResponseEntity<Viagem> criarDestino(){
 
-    }
-
-    public
-
-    void delete(@PathVariable Long id){
-        this.viagemRepository.delete();
     }
 }
